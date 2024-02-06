@@ -1,0 +1,301 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+    <head>
+        <link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+        <#if .locale == "zh_CN">
+        <link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+        <#elseif .locale == "zh_TW">
+        <link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+        <#elseif .locale == "ja_JP">
+        <link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+        <#elseif .locale == "ko_KR">
+        <link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+        <#elseif .locale == "th_TH">
+        <link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+    </#if>
+
+    <style type="text/css">* {
+        <#if .locale == "zh_CN">
+        font-family: NotoSans, NotoSansCJKsc, sans-serif;
+        <#elseif .locale == "zh_TW">
+        font-family: NotoSans, NotoSansCJKtc, sans-serif;
+        <#elseif .locale == "ja_JP">
+        font-family: NotoSans, NotoSansCJKjp, sans-serif;
+        <#elseif .locale == "ko_KR">
+        font-family: NotoSans, NotoSansCJKkr, sans-serif;
+        <#elseif .locale == "th_TH">
+        font-family: NotoSans, NotoSansThai, sans-serif;
+        <#else>
+        font-family: NotoSans, sans-serif;
+        </#if>
+    }
+    table {
+        font-size: 10px;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    th {
+        font-weight: bold;
+        font-size: 10px;
+        padding: 5px 6px 3px;
+        color: #333333;
+    }
+    td {
+        padding: 4px;
+    }
+    td p { align:left;
+    }
+    b {
+        font-weight: bold;
+        color: #333333;
+    }
+    table.header td {
+        padding: 0px;
+        font-size: 9px;
+    }
+    table.footer td {
+        padding: 0px;
+        font-size: 8pt;
+    }
+    table.itemtable th {
+        padding-bottom: 3px;
+        padding-top: 3px;
+
+    }
+    table.itemtable td {
+        font-size: 10px;
+    }
+    table.body td {
+        padding-top: 2px;
+    }
+    table.total {
+        page-break-inside: avoid;
+    }
+    tr.totalrow {
+        background-color: #e3e3e3;
+        line-height: 200%;
+    }
+    tr.item-table-header{
+        border-bottom: 1px dotted #444;
+        border-top: 1px solid #888;
+    }
+    tr.item-table-header td{
+        background-color: #efefef;
+        font-weight:normal;
+    }
+    .right {
+        float: right;
+        width: 300px;
+    }
+    tr.item-table-footer{
+        border-bottom: 1px solid  #444;
+        border-top: 1px dotted #888;
+    }
+    tr.item-table-footer td{
+        background-color: #efefef;
+        font-weight:normal;
+    }
+    tr.sub-total-line{
+        border-top: 1px dotted #444;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    td.totalboxtop {
+        font-size: 12pt;
+        background-color: #e3e3e3;
+    }
+    td.addressheader {
+        font-size: 8pt;
+        padding-top: 6px;
+        padding-bottom: 2px;
+    }
+    td.address {
+        padding-top: 0px;
+    }
+    td.totalboxmid {
+        font-size: 28pt;
+        padding-top: 20px;
+        background-color: #e3e3e3;
+    }
+    td.totalboxbot {
+        background-color: #e3e3e3;
+        font-weight: bold;
+    }
+    span.title {
+        font-size: 18pt;
+    }
+    span.number {
+        font-size: 16pt;
+    }
+    span.itemname {
+        font-weight: bold;
+        line-height: 150%;
+    }
+    span.right {
+        text-align: right;
+    }
+    span.center {
+        width: 100% !important;
+        text-align: center !important;
+        line-height: 10pt;
+    }
+
+    hr {
+        width: 100%;
+        color: #ddd;
+        background-color: #ddd;
+        height: 1px;
+    }
+    </style>
+
+    </head>
+
+    <body header="nlheader" header-height="80" footer="nlfooter" footer-height="25" padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+
+    <img src="https://7493949.app.netsuite.com/core/media/media.nl?id=4978&amp;c=7493949&amp;h=7WRkeVQ5qrUJHL7VGMwONcD8OUG3dQc_s3iXiKAHJRZ9Eofq&amp;fcts=20220125155108&amp;whence=" style="width: 200px; height: 57px;" />
+
+    <table style="width: 100%; margin-top: 25px;">
+
+        <tr>
+            <td align="center" colspan="28" style="font-size: 18px; text-transform:uppercase;"><b>RETAINER STATEMENT</b></td>
+        </tr>
+    </table>
+
+    <table style="width:100%; line-height:14px; font-size:10px;">
+        <#if ds.custobj?has_content>
+        <#list ds.custobj as custInfo>
+        <tr>
+            <td><b>CUST #:</b> ${custInfo.values.entityid} </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><b>ATTN:</b> ${custInfo.values.attention}<br />
+                ${custInfo.values.addressee}<br />
+                ${custInfo.values.address1}<br />
+                ${custInfo.values.city}&nbsp;,${custInfo.values.state.value}&nbsp;${custInfo.values.zipcode} <br />
+                ${custInfo.values.email}<br />
+            </td>
+        </#list>
+        <td style="text-align: right;"><b>EXPIRATION DATE: </b>
+            <#if ds.retainer?has_content>
+            <#list ds.retainer as ret>
+            ${ret.retainerEnd}
+        </#list>
+        <#else>
+        <em>NO END DATE</em>
+    </#if>
+    </td>
+    </tr>
+    <#else>
+    <tr>
+        <td><b> CUST #: </b></td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><b> ATTN: </b> <br />
+            <br />
+            <br />
+            <br />
+        </td>
+        <td style="text-align: right;"><b>EXPIRATION DATE: </b>&nbsp;</td>
+    </tr>
+    </#if>
+    </table>
+
+    <table class="itemtable" style="width: 100%; margin-top: 25px;">
+
+        <!--tr>
+            <td align="center" colspan="28" style="font-size: 12px; text-transform:uppercase;"><b>Activities</b></td>
+        </tr-->
+
+        <tr class="item-table-header">>
+            <th colspan="7" style="text-align: left;"><p>DATE</p></th>
+            <th colspan="16" style="text-align: left;"><p>INVOICE #</p></th>
+            <th colspan="5" style="text-align: right;"><span class="right">AMOUNT</span></th>
+        </tr>
+
+        <tr>
+            <td colspan="7"></td>
+            <td colspan="16"></td>
+            <td colspan="5"></td>
+        </tr>
+
+        <!--tr>
+            <td colspan="7" style="text-align: left;"><b>RETAINER BALANCE AT</b></td>
+            <#if ds.retainer?has_content>
+                <#list ds.retainer as ret>
+                <td colspan="14"  style="text-align: left;">${ret.retainerStart}</td>
+                <td colspan="7" style="text-align: right;">
+                        ${nsformat_currency(ret.retainerBudget)}
+                    </#list>
+                    <#else>
+                    <em>0.00</em>
+                </#if>
+                </td>
+        </tr-->
+
+
+        <#if ds.invobj?has_content>
+        <#list ds.invobj as inv>
+        <tr>
+            <td colspan="7"  style="text-align: left;">${inv.values.trandate}</td>
+            <td colspan="16" style="text-align: left;">${inv.values.tranid}</td>
+            <td colspan="5" style="text-align: right;">${nsformat_currency(inv.values.custbody_ctc_ret_trans_amount)}</td>
+        </tr>
+    </#list>
+    <#else>
+    <tr>
+        <!--td colspan="7"  style="text-align: left;">NO INVOICE TRANSACTION FOUND</td-->
+        <td colspan="7" style="text-align: left;"></td>
+        <td colspan="16" style="text-align: left;"></td>
+        <td colspan="5" style="text-align: right;"></td>
+    </tr>
+</#if>
+
+<#if ds.cmobj?has_content>
+    <#list ds.cmobj as cm>
+    <tr>
+        <td colspan="7"  style="text-align: left;">${cm.values.trandate}</td>
+        <td colspan="16" style="text-align: left;">${cm.values.tranid}</td>
+        <td colspan="5" style="text-align: right;">${nsformat_currency(cm.values.custbody_ctc_ret_trans_amount)}</td>
+    </tr>
+    </#list>
+    <#else>
+    <tr>
+        <!--td colspan="7"  style="text-align: left;">NO INVOICE TRANSACTION FOUND</td-->
+        <td colspan="7" style="text-align: left;"></td>
+        <td colspan="16" style="text-align: left;"></td>
+        <td colspan="5" style="text-align: right;"></td>
+    </tr>
+</#if>
+
+<tr>
+    <td colspan="7"></td>
+    <td colspan="16"></td>
+    <td colspan="5"></td>
+</tr>
+
+<tr class="item-table-footer">
+    <td colspan="7" style="text-align: left;"><b>RETAINER BALANCE AT</b></td>
+    <td colspan="16"  style="text-align: left;"><b>${ds.today}</b></td>
+    <td colspan="5" style="text-align: right;"><b>
+        <#if ds.custobj?has_content>
+        <#list ds.custobj as custInfo>
+        ${nsformat_currency(custInfo.values.custentity_ctc_custret_totalbalance)}
+    </#list>
+        <#else>
+        <em>0.00</em>
+    </#if></b>
+    </td>
+</tr>
+</table>
+
+<br /><br />
+<table style="margin-top: 25px; page-break-inside: avoid;" width="100%">
+    <tr><td><b>PLEASE NOTE: THIS IS NOT A INVOICE</b>,this is a statement of retainer activity only through the date shown and may not reflect</td></tr>
+    <tr><td> your current available balance.</td></tr>
+</table>
+
+</body>
+
+</pdf>
